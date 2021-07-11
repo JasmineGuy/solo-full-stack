@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full CRUD Practice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Role Models</h1>
+    </header>
+    
+    <main>
+        <div id=form-container>
+            <form>
+                <h3>Nominate Your Role Model</h3>
+                <input 
+                type='text'
+                id="name"
+                placeholder="What's your role model's full name?"/>
+                <input 
+                type='text'
+                id="reason"
+                placeholder="Why are you nominating them?"/>
+                <input 
+                type='text'
+                id="img"
+                placeholder='Paste an image URL'/>
+                <button>add role model</button>
+            </form>
+        </div>
+
+        <div id="role-model-container"></div>
+    </main> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./main.js"></script> 
+
+</body>
+</html>
